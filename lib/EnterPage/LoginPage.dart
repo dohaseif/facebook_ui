@@ -1,3 +1,4 @@
+import 'package:facebook_ui/HomePage/TabBar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 class LoginPage extends StatefulWidget {
@@ -48,15 +49,20 @@ class LoginPage extends StatefulWidget {
                   ),
                 ),),
               Container(height: 20,),
-              Container(height: 40,width: ContaenarSize,
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => News()));
+              },
+              child:Container(height: 40,width: ContaenarSize,
                 decoration: BoxDecoration(
                   color: Colors.blue,
                   borderRadius: BorderRadius.circular(6)
                 ),
                 child: Center(child:
-                Text('Login',style: TextStyle(color: Colors.white
+                  Text('Login',style: TextStyle(color: Colors.white
                 ,fontSize: 18),),),
-              ),
+              ),),
               Container(height: 20,),
               Text('Forgot Password ?',style: TextStyle(
                 color: Colors.blue[900]
@@ -72,7 +78,12 @@ class LoginPage extends StatefulWidget {
                 height: 70,
                 width: ContaenarSize,
                 child:Center(
-                  child: Container(
+                  child:GestureDetector(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => LoginPage()));
+                    },
+                    child: Container(
                     decoration: BoxDecoration(
                       color: Colors.green,
                       borderRadius: BorderRadius.circular(6)
@@ -81,7 +92,7 @@ class LoginPage extends StatefulWidget {
                     width: ContaenarSize-100,
                     child: Center(child: Text("Create New Facebook Account",
                     style: TextStyle(color: Colors.white),),),
-                  ),
+                  ),),
                 ),
                 ),
             ],
