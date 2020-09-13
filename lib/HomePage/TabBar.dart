@@ -18,8 +18,8 @@ class News extends StatefulWidget {
 
 class _NewsState extends State<News> {
   final controller = PageController();
-  final ColorIcons = Colors.grey;
-  final SizeIcon = 30.0;
+  final ColorIcons = Colors.grey[700];
+  final SizeIcon = 35.0;
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -27,12 +27,12 @@ class _NewsState extends State<News> {
       length: 5,
       initialIndex: 0,
       child: Scaffold(
-      appBar: AppBar(
-        title: Text('facebook',style: TextStyle(
+        appBar: AppBar(
+         title: Text('facebook',style: TextStyle(
           color: Colors.blue,fontSize: 35,
           fontWeight: FontWeight.bold
         ),),
-        actions: <Widget>[
+         actions: <Widget>[
           Container(width: 40 , height: 40 ,
             margin: EdgeInsets.only(right: 10),
             padding: EdgeInsets.all(8),
@@ -55,8 +55,8 @@ class _NewsState extends State<News> {
            height: 10,width: 10,),
           ),
         ],
-        backgroundColor: Colors.white,
-        elevation: 0,automaticallyImplyLeading: false,
+         backgroundColor: Colors.white,
+          elevation: 0,automaticallyImplyLeading: false,
           bottom :
             TabBar(
               labelColor: Colors.blue,
@@ -71,7 +71,8 @@ class _NewsState extends State<News> {
               ],
             ),
           ),
-        body: TabBarView(children: [
+        body:
+        TabBarView(children: [
             NewsTab(),
             VideosTab(),
             ShopTab(),
@@ -79,6 +80,7 @@ class _NewsState extends State<News> {
             SettingTab(),
         ]
         ),
+        backgroundColor: Colors.grey,
       ),
     );
   }
