@@ -43,17 +43,32 @@ class _NewsState extends State<News> {
             child :
             Icon(Icons.search,color: Colors.black,
               size: 30,),),
-          Container(width: 40 , height: 40 ,
-            margin: EdgeInsets.only(right: 10),
+          Stack(children: <Widget>[
+           Container(width: 40 , height: 40 ,
+            margin: EdgeInsets.only(right: 10,top: 10),
             padding: EdgeInsets.all(8),
             decoration: BoxDecoration(
               color: Colors.grey[200],
               shape: BoxShape.circle
             ),
             child :
-           Image.asset('img/massnger.png',color: Colors.black,
-           height: 10,width: 10,),
+              Image.asset('img/massnger.png',color: Colors.black,
+             height: 50,width: 50,),
           ),
+            Positioned(width: 50,top: 10,left: 5,
+              child: Container(
+                height: 15,
+                decoration: BoxDecoration(
+                    color: Colors.red,
+                    shape: BoxShape.circle,
+                ),
+                child: Center(child: Text('2',style: TextStyle(
+                  color: Colors.white
+                ),),),
+              ),
+            ),],
+          ),
+
         ],
          backgroundColor: Colors.white,
           elevation: 0,automaticallyImplyLeading: false,
