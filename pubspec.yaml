@@ -55,6 +55,14 @@ flutter:
   - img/massnger.png
   - img/whats.png
   - img/cover.jpg
+  - img/Like.png
+  - img/love.png
+  - img/profile.jpg
+  - img/profile2.jpg
+  - img/profile3.jpg
+  - img/profile4.jpg
+  - img/profile5.jpg
+  - img/profile6.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
