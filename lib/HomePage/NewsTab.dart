@@ -692,17 +692,708 @@ class Postes extends StatelessWidget {
             margin: EdgeInsets.only(top: 13),
             height: 500,
             color: ColorContaner,
+            child:Stack(children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.only(top: 15,left: 15,right: 15),
+                    height: 60,
+//                  color: Colors.green,
+                    child: Row(children: <Widget>[
+                      Container(
+                        width: 50,height: 50,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          image:DecorationImage(
+                              fit: BoxFit.cover,
+                              image: ExactAssetImage('img/profile.jpg',)),
+                        ),
+                      ),
+                      Column(
+                        children: <Widget>[Stack(children: <Widget>[
+                          Container(
+                            padding: EdgeInsets.only(left: 10,
+                                top: 4),
+                            color: Colors.white,
+                            width: 280,
+                            child: Text('Helal Elnimer',style:
+                            TextStyle(color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize:18),),
+                          ),
+                          Positioned(width: 260,top: 7,right: 24,
+                            child: Container(
+                              height: 15,
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                                shape: BoxShape.circle,
+                              ),
+                              child: Center(child: Icon(Icons.check,color: Colors.white,
+                                size: 12,)),
+                            ),
+                          ),
+                          Positioned(right: 0,
+                            child: Container(
+                              height: 30,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                              ),
+                              child: Center(child: Text('updated his profile',
+                                style: TextStyle(fontSize: 18),)),
+                            ),
+                          ),
+                        ],),
+                          Row(children: <Widget>[
+                            Container(
+                              padding: EdgeInsets.only(left: 10),
+                              color: Colors.white,
+                              child: Text('5 hour .  ',style:
+                              TextStyle(color: Colors.grey[600],
+                                  fontWeight: FontWeight.bold,
+                                  fontSize:14),),
+                            ),
+                            Container(
+                                padding: EdgeInsets.only(right: 200),
+                                color: Colors.white,
+                                child: Icon(Icons.public,size: 18,
+                                  color: Colors.grey[600],)
+                            ),
+                          ],),
+
+                        ],
+                      ),
+                    ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 15,right: 15),
+                    padding: EdgeInsets.only(left: 15),
+//                  color: Colors.pink,
+                    height: 30,
+                    width: 400,
+                    child: Text('Now profile Pic :) ',style: TextStyle(
+                        fontSize: 18
+                    ),),
+                  ),
+                  Container(
+                    height: 300,
+                    margin: EdgeInsets.only(left: 45,right: 45),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image:DecorationImage(
+                          fit: BoxFit.cover,
+                          image: ExactAssetImage('img/profile.jpg',)),
+                    ),
+                  ),
+                  Container(
+                    height: 30,
+                    margin: EdgeInsets.only(top: 10,bottom: 5),
+                    child: Row(children: <Widget>[
+                      Container(
+                        height: 20,width: 20,
+                        margin: EdgeInsets.only(left: 10),
+                        child:
+                        Image.asset('img/love.png'),),
+                      Container(
+                        margin: EdgeInsets.only(right: 5),
+                        height: 20,width: 20,
+                        child:
+                        Image.asset('img/Like.png'),),
+                      Container(
+                        child: Text('10K                                       5K Comments . 200 Shares'),
+                      )
+                    ],),
+                  ),
+                  Container(
+                    height: 50,
+                    decoration: BoxDecoration(
+                        border: Border(top: BorderSide(
+                            color: Colors.grey[200],width: 2
+                        ))
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          height: 30,width: 125,
+                          decoration: BoxDecoration(
+                              border: Border(right: BorderSide(
+                                  color: Colors.grey[200],width: 2
+                              ))
+                          ),
+                          child:Container(margin: EdgeInsets.only(left: 30),child :
+                          Row(
+                            children: <Widget>[Container(height: 30,width: 30,
+                              child:
+                              Image.asset('img/love.png',fit: BoxFit.cover,),),
+                              Text('  Like',style: TextStyle(fontWeight: FontWeight.bold,
+                                  color: Colors.red),)
+                            ],),),
+                        ),
+                        Container(
+                          height: 30,width: 125,
+                          decoration: BoxDecoration(
+                              border: Border(right: BorderSide(
+                                  color: Colors.grey[200],width: 2
+                              ))
+                          ),
+                          child:Container(margin: EdgeInsets.only(left: 20),child :
+                          Row(
+                            children: <Widget>[
+                              Icon(Icons.comment,color: Colors.grey[600],size: 25,),
+                              Text(' Comment',style: TextStyle(fontWeight: FontWeight.bold,
+                                  color: Colors.grey[600]),)
+                            ],),),
+                        ),
+                        Container(
+                          height: 30,width: 125,
+                          child:Container(margin: EdgeInsets.only(left: 30),child :
+                          Row(
+                            children: <Widget>[
+                              Icon(Icons.share,color: Colors.grey[600],size: 25,),
+                              Text('  Share',style: TextStyle(fontWeight: FontWeight.bold,
+                                  color: Colors.grey[600]),)
+                            ],),),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              Positioned(top: 14,right: 20,
+                  child: Icon(Icons.more_horiz)
+              ),
+            ],),
           ),
           Container(
             margin: EdgeInsets.only(top: 13),
             height: 500,
             color: ColorContaner,
+            child:Stack(children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.only(top: 15,left: 15,right: 15),
+                    height: 60,
+//                  color: Colors.green,
+                    child: Row(children: <Widget>[
+                      Container(
+                        width: 50,height: 50,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          image:DecorationImage(
+                              fit: BoxFit.cover,
+                              image: ExactAssetImage('img/profile.jpg',)),
+                        ),
+                      ),
+                      Column(
+                        children: <Widget>[Stack(children: <Widget>[
+                          Container(
+                            padding: EdgeInsets.only(left: 10,
+                                top: 4),
+                            color: Colors.white,
+                            width: 280,
+                            child: Text('Helal Elnimer',style:
+                            TextStyle(color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize:18),),
+                          ),
+                          Positioned(width: 260,top: 7,right: 24,
+                            child: Container(
+                              height: 15,
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                                shape: BoxShape.circle,
+                              ),
+                              child: Center(child: Icon(Icons.check,color: Colors.white,
+                                size: 12,)),
+                            ),
+                          ),
+                          Positioned(right: 0,
+                            child: Container(
+                              height: 30,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                              ),
+                              child: Center(child: Text('updated his profile',
+                                style: TextStyle(fontSize: 18),)),
+                            ),
+                          ),
+                        ],),
+                          Row(children: <Widget>[
+                            Container(
+                              padding: EdgeInsets.only(left: 10),
+                              color: Colors.white,
+                              child: Text('5 hour .  ',style:
+                              TextStyle(color: Colors.grey[600],
+                                  fontWeight: FontWeight.bold,
+                                  fontSize:14),),
+                            ),
+                            Container(
+                                padding: EdgeInsets.only(right: 200),
+                                color: Colors.white,
+                                child: Icon(Icons.public,size: 18,
+                                  color: Colors.grey[600],)
+                            ),
+                          ],),
+
+                        ],
+                      ),
+                    ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 15,right: 15),
+                    padding: EdgeInsets.only(left: 15),
+//                  color: Colors.pink,
+                    height: 30,
+                    width: 400,
+                    child: Text('Now profile Pic :) ',style: TextStyle(
+                        fontSize: 18
+                    ),),
+                  ),
+                  Container(
+                    height: 300,
+                    margin: EdgeInsets.only(left: 45,right: 45),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image:DecorationImage(
+                          fit: BoxFit.cover,
+                          image: ExactAssetImage('img/profile.jpg',)),
+                    ),
+                  ),
+                  Container(
+                    height: 30,
+                    margin: EdgeInsets.only(top: 10,bottom: 5),
+                    child: Row(children: <Widget>[
+                      Container(
+                        height: 20,width: 20,
+                        margin: EdgeInsets.only(left: 10),
+                        child:
+                        Image.asset('img/love.png'),),
+                      Container(
+                        margin: EdgeInsets.only(right: 5),
+                        height: 20,width: 20,
+                        child:
+                        Image.asset('img/Like.png'),),
+                      Container(
+                        child: Text('10K                                       5K Comments . 200 Shares'),
+                      )
+                    ],),
+                  ),
+                  Container(
+                    height: 50,
+                    decoration: BoxDecoration(
+                        border: Border(top: BorderSide(
+                            color: Colors.grey[200],width: 2
+                        ))
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          height: 30,width: 125,
+                          decoration: BoxDecoration(
+                              border: Border(right: BorderSide(
+                                  color: Colors.grey[200],width: 2
+                              ))
+                          ),
+                          child:Container(margin: EdgeInsets.only(left: 30),child :
+                          Row(
+                            children: <Widget>[Container(height: 30,width: 30,
+                              child:
+                              Image.asset('img/love.png',fit: BoxFit.cover,),),
+                              Text('  Like',style: TextStyle(fontWeight: FontWeight.bold,
+                                  color: Colors.red),)
+                            ],),),
+                        ),
+                        Container(
+                          height: 30,width: 125,
+                          decoration: BoxDecoration(
+                              border: Border(right: BorderSide(
+                                  color: Colors.grey[200],width: 2
+                              ))
+                          ),
+                          child:Container(margin: EdgeInsets.only(left: 20),child :
+                          Row(
+                            children: <Widget>[
+                              Icon(Icons.comment,color: Colors.grey[600],size: 25,),
+                              Text(' Comment',style: TextStyle(fontWeight: FontWeight.bold,
+                                  color: Colors.grey[600]),)
+                            ],),),
+                        ),
+                        Container(
+                          height: 30,width: 125,
+                          child:Container(margin: EdgeInsets.only(left: 30),child :
+                          Row(
+                            children: <Widget>[
+                              Icon(Icons.share,color: Colors.grey[600],size: 25,),
+                              Text('  Share',style: TextStyle(fontWeight: FontWeight.bold,
+                                  color: Colors.grey[600]),)
+                            ],),),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              Positioned(top: 14,right: 20,
+                  child: Icon(Icons.more_horiz)
+              ),
+            ],),
           ),
           Container(
             margin: EdgeInsets.only(top: 13),
             height: 500,
             color: ColorContaner,
-          ),],),
+            child:Stack(children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.only(top: 15,left: 15,right: 15),
+                    height: 60,
+//                  color: Colors.green,
+                    child: Row(children: <Widget>[
+                      Container(
+                        width: 50,height: 50,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          image:DecorationImage(
+                              fit: BoxFit.cover,
+                              image: ExactAssetImage('img/profile.jpg',)),
+                        ),
+                      ),
+                      Column(
+                        children: <Widget>[Stack(children: <Widget>[
+                          Container(
+                            padding: EdgeInsets.only(left: 10,
+                                top: 4),
+                            color: Colors.white,
+                            width: 280,
+                            child: Text('Helal Elnimer',style:
+                            TextStyle(color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize:18),),
+                          ),
+                          Positioned(width: 260,top: 7,right: 24,
+                            child: Container(
+                              height: 15,
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                                shape: BoxShape.circle,
+                              ),
+                              child: Center(child: Icon(Icons.check,color: Colors.white,
+                                size: 12,)),
+                            ),
+                          ),
+                          Positioned(right: 0,
+                            child: Container(
+                              height: 30,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                              ),
+                              child: Center(child: Text('updated his profile',
+                                style: TextStyle(fontSize: 18),)),
+                            ),
+                          ),
+                        ],),
+                          Row(children: <Widget>[
+                            Container(
+                              padding: EdgeInsets.only(left: 10),
+                              color: Colors.white,
+                              child: Text('5 hour .  ',style:
+                              TextStyle(color: Colors.grey[600],
+                                  fontWeight: FontWeight.bold,
+                                  fontSize:14),),
+                            ),
+                            Container(
+                                padding: EdgeInsets.only(right: 200),
+                                color: Colors.white,
+                                child: Icon(Icons.public,size: 18,
+                                  color: Colors.grey[600],)
+                            ),
+                          ],),
+
+                        ],
+                      ),
+                    ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 15,right: 15),
+                    padding: EdgeInsets.only(left: 15),
+//                  color: Colors.pink,
+                    height: 30,
+                    width: 400,
+                    child: Text('Now profile Pic :) ',style: TextStyle(
+                        fontSize: 18
+                    ),),
+                  ),
+                  Container(
+                    height: 300,
+                    margin: EdgeInsets.only(left: 45,right: 45),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image:DecorationImage(
+                          fit: BoxFit.cover,
+                          image: ExactAssetImage('img/profile.jpg',)),
+                    ),
+                  ),
+                  Container(
+                    height: 30,
+                    margin: EdgeInsets.only(top: 10,bottom: 5),
+                    child: Row(children: <Widget>[
+                      Container(
+                        height: 20,width: 20,
+                        margin: EdgeInsets.only(left: 10),
+                        child:
+                        Image.asset('img/love.png'),),
+                      Container(
+                        margin: EdgeInsets.only(right: 5),
+                        height: 20,width: 20,
+                        child:
+                        Image.asset('img/Like.png'),),
+                      Container(
+                        child: Text('10K                                       5K Comments . 200 Shares'),
+                      )
+                    ],),
+                  ),
+                  Container(
+                    height: 50,
+                    decoration: BoxDecoration(
+                        border: Border(top: BorderSide(
+                            color: Colors.grey[200],width: 2
+                        ))
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          height: 30,width: 125,
+                          decoration: BoxDecoration(
+                              border: Border(right: BorderSide(
+                                  color: Colors.grey[200],width: 2
+                              ))
+                          ),
+                          child:Container(margin: EdgeInsets.only(left: 30),child :
+                          Row(
+                            children: <Widget>[Container(height: 30,width: 30,
+                              child:
+                              Image.asset('img/love.png',fit: BoxFit.cover,),),
+                              Text('  Like',style: TextStyle(fontWeight: FontWeight.bold,
+                                  color: Colors.red),)
+                            ],),),
+                        ),
+                        Container(
+                          height: 30,width: 125,
+                          decoration: BoxDecoration(
+                              border: Border(right: BorderSide(
+                                  color: Colors.grey[200],width: 2
+                              ))
+                          ),
+                          child:Container(margin: EdgeInsets.only(left: 20),child :
+                          Row(
+                            children: <Widget>[
+                              Icon(Icons.comment,color: Colors.grey[600],size: 25,),
+                              Text(' Comment',style: TextStyle(fontWeight: FontWeight.bold,
+                                  color: Colors.grey[600]),)
+                            ],),),
+                        ),
+                        Container(
+                          height: 30,width: 125,
+                          child:Container(margin: EdgeInsets.only(left: 30),child :
+                          Row(
+                            children: <Widget>[
+                              Icon(Icons.share,color: Colors.grey[600],size: 25,),
+                              Text('  Share',style: TextStyle(fontWeight: FontWeight.bold,
+                                  color: Colors.grey[600]),)
+                            ],),),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              Positioned(top: 14,right: 20,
+                  child: Icon(Icons.more_horiz)
+              ),
+            ],),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 13),
+            height: 500,
+            color: ColorContaner,
+            child:Stack(children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.only(top: 15,left: 15,right: 15),
+                    height: 60,
+//                  color: Colors.green,
+                    child: Row(children: <Widget>[
+                      Container(
+                        width: 50,height: 50,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          image:DecorationImage(
+                              fit: BoxFit.cover,
+                              image: ExactAssetImage('img/profile.jpg',)),
+                        ),
+                      ),
+                      Column(
+                        children: <Widget>[Stack(children: <Widget>[
+                          Container(
+                            padding: EdgeInsets.only(left: 10,
+                                top: 4),
+                            color: Colors.white,
+                            width: 280,
+                            child: Text('Helal Elnimer',style:
+                            TextStyle(color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize:18),),
+                          ),
+                          Positioned(width: 260,top: 7,right: 24,
+                            child: Container(
+                              height: 15,
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                                shape: BoxShape.circle,
+                              ),
+                              child: Center(child: Icon(Icons.check,color: Colors.white,
+                                size: 12,)),
+                            ),
+                          ),
+                          Positioned(right: 0,
+                            child: Container(
+                              height: 30,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                              ),
+                              child: Center(child: Text('updated his profile',
+                                style: TextStyle(fontSize: 18),)),
+                            ),
+                          ),
+                        ],),
+                          Row(children: <Widget>[
+                            Container(
+                              padding: EdgeInsets.only(left: 10),
+                              color: Colors.white,
+                              child: Text('5 hour .  ',style:
+                              TextStyle(color: Colors.grey[600],
+                                  fontWeight: FontWeight.bold,
+                                  fontSize:14),),
+                            ),
+                            Container(
+                                padding: EdgeInsets.only(right: 200),
+                                color: Colors.white,
+                                child: Icon(Icons.public,size: 18,
+                                  color: Colors.grey[600],)
+                            ),
+                          ],),
+
+                        ],
+                      ),
+                    ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 15,right: 15),
+                    padding: EdgeInsets.only(left: 15),
+//                  color: Colors.pink,
+                    height: 30,
+                    width: 400,
+                    child: Text('Now profile Pic :) ',style: TextStyle(
+                        fontSize: 18
+                    ),),
+                  ),
+                  Container(
+                    height: 300,
+                    margin: EdgeInsets.only(left: 45,right: 45),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image:DecorationImage(
+                          fit: BoxFit.cover,
+                          image: ExactAssetImage('img/profile.jpg',)),
+                    ),
+                  ),
+                  Container(
+                    height: 30,
+                    margin: EdgeInsets.only(top: 10,bottom: 5),
+                    child: Row(children: <Widget>[
+                      Container(
+                        height: 20,width: 20,
+                        margin: EdgeInsets.only(left: 10),
+                        child:
+                        Image.asset('img/love.png'),),
+                      Container(
+                        margin: EdgeInsets.only(right: 5),
+                        height: 20,width: 20,
+                        child:
+                        Image.asset('img/Like.png'),),
+                      Container(
+                        child: Text('10K                                       5K Comments . 200 Shares'),
+                      )
+                    ],),
+                  ),
+                  Container(
+                    height: 50,
+                    decoration: BoxDecoration(
+                        border: Border(top: BorderSide(
+                            color: Colors.grey[200],width: 2
+                        ))
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          height: 30,width: 125,
+                          decoration: BoxDecoration(
+                              border: Border(right: BorderSide(
+                                  color: Colors.grey[200],width: 2
+                              ))
+                          ),
+                          child:Container(margin: EdgeInsets.only(left: 30),child :
+                          Row(
+                            children: <Widget>[Container(height: 30,width: 30,
+                              child:
+                              Image.asset('img/love.png',fit: BoxFit.cover,),),
+                              Text('  Like',style: TextStyle(fontWeight: FontWeight.bold,
+                                  color: Colors.red),)
+                            ],),),
+                        ),
+                        Container(
+                          height: 30,width: 125,
+                          decoration: BoxDecoration(
+                              border: Border(right: BorderSide(
+                                  color: Colors.grey[200],width: 2
+                              ))
+                          ),
+                          child:Container(margin: EdgeInsets.only(left: 20),child :
+                          Row(
+                            children: <Widget>[
+                              Icon(Icons.comment,color: Colors.grey[600],size: 25,),
+                              Text(' Comment',style: TextStyle(fontWeight: FontWeight.bold,
+                                  color: Colors.grey[600]),)
+                            ],),),
+                        ),
+                        Container(
+                          height: 30,width: 125,
+                          child:Container(margin: EdgeInsets.only(left: 30),child :
+                          Row(
+                            children: <Widget>[
+                              Icon(Icons.share,color: Colors.grey[600],size: 25,),
+                              Text('  Share',style: TextStyle(fontWeight: FontWeight.bold,
+                                  color: Colors.grey[600]),)
+                            ],),),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              Positioned(top: 14,right: 20,
+                  child: Icon(Icons.more_horiz)
+              ),
+            ],),
+          ),
+
+        ],),
       );
   }
 }
