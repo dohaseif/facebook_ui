@@ -8,6 +8,7 @@ class NewsTab extends StatelessWidget {
     return ListView(
       children: <Widget>[
         WritePost(),
+
         CreateRoom(),
         Storys(),
         Postes(),
